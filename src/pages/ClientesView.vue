@@ -108,7 +108,7 @@ import Cliente from "../model/cliente/ClienteModel";
 /* INSTANCIANDO CLASSE DE SERVIÇO API DE CLIENTES*/
 import ClienteService from "../service/cliente/ClienteService";
 
-/* INSTANCIANDO MODAL DE CLIENTE*/
+/* COMPONENTE MODAL DE CLIENTE*/
 import DialogCliente from "./components/dialog-cliente-form.vue";
 
 export default {
@@ -196,6 +196,5 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-@import "../assets/demo/badges.scss";
+<style scoped>
 </style>

@@ -23,7 +23,6 @@
         >Nome é obrigatório.</small
       >
     </div>
-   
     <div class="field">
       <label for="cpf">Cpf</label>
       <InputMask 
@@ -71,12 +70,12 @@
     </template>
   </Dialog>
 </template>
-
 <script>
-//Models
+
+/* INSTANCIANDO CLASSE DE MODELO DE CLIENTES */
 import Cliente from "../../model/cliente/ClienteModel";
 
-//Services
+/* INSTANCIANDO CLASSE DE SERVIÇO API DE CLIENTES*/
 import ClienteService from "../../service/cliente/ClienteService";
 
 //VALIDATIONS
