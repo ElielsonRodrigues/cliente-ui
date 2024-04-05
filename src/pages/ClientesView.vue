@@ -51,6 +51,10 @@
             </div>
           </template>
 
+          <template #empty>
+            <div class="text-center">Nenhum registro...</div>
+          </template>
+
           <Column field="codigo" header="Código" :sortable="true">
             <template #body="slotProps">
               <span class="p-column-title">Código</span>
@@ -158,7 +162,7 @@ export default {
     /* METODO QUE DISPARA A MODAL DE EXCLUSÃO */
     showRemove(cliente) {
       this.$confirm.require({
-        message: `Deseja excluir o cliente ${cliente.nome} | CPF: ${cliente.cpf}? Se sim, confirme a exclusão.`,
+        message: `Deseja excluir o cliente ${cliente.nome} | CPF: ${this.formatCpf(cliente.cpf)}? Se sim, confirme a exclusão.`,
         header: "Confirmação de Exclusão.",
         icon: "pi pi-exclamation-triangle",
         acceptLabel: "Sim",
